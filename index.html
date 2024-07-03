@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Cartaz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Editor de Cartaz</h1>
+  </header>
+
+  <main>
+    <form id="form-cartaz">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" value="Aroma e Sabor">
+
+      <label for="weekday">Dia da semana:</label>
+      <input type="text" id="weekday" name="weekday" value="QUARTA-FEIRA">
+
+      <label for="items">Itens do menu (um item por linha):</label>
+      <textarea id="items" name="items">Almôndegas
+Carré Acebolado
+Iscas de Frango
+Frango Grelhado
+Calabresa Acebolada</textarea>
+
+      <label for="phoneNumbers">Números de telefone (um por linha):</label>
+      <textarea id="phoneNumbers" name="phoneNumbers">(21) 99864-8606
+(21) 97289-1200</textarea>
+
+      <label for="priceM">Preço M:</label>
+      <input type="text" id="priceM" name="priceM" value="R$ 18">
+
+      <label for="priceG">Preço G:</label>
+      <input type="text" id="priceG" name="priceG" value="R$ 22">
+
+      <button type="submit">Gerar Cartaz</button>
+    </form>
+
+    <div id="canvas-container">
+      <canvas id="cartaz-canvas"></canvas>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
